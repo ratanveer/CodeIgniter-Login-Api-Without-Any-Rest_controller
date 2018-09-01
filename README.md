@@ -1,11 +1,9 @@
 # Simple Codeigniter REST API
 Simple source code for learning basic backend developer using REST API (login, CRUD).
 
-# Demo
-[Visit Here](https://www.youtube.com/watch?v=MbkMrnisyo4)
 
 # Setup
-Download or clone [Master File](simple-codeigniter-rest-api)
+Download or clone [Master File](simple-CodeIgniter-Login-Api-Without-Any-Rest_controller)
 and then config & import MySQL database 
 
 You can use [POSTMAN](https://www.getpostman.com/) or anything else for simulate frontend
@@ -17,16 +15,13 @@ And for API except `login` you must include `id` & `token` that you get after su
 
 List of the API :
 
-`[POST]` `/auth/login` json `{ "username" : "admin", "password" : "Admin123$"}`
+url: http://localhost/foldername/index.php/auth/login
+header: 
+Key: Content-Type Value:application/json
 
-`[GET]` `/book`
-
-`[POST]` `/book/create` json `{ "title" : "x", "author" : "xx"}`
-
-`[PUT]` `/book/update/:id` json `{ "title" : "y", "author" : "yy"}`
-
-`[GET]` `/book/detail/:id`
-
-`[DELETE]` `/book/delete/:id`
-
-`[POST]` `/auth/logout`
+Body:
+{
+	"username" : "XXX",
+	"password" : "XXX"
+}
+Method: POST
